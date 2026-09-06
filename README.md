@@ -7,7 +7,8 @@ Key features:
 * Dynamic folder and file naming
 * Integration with Logic Apps for alerting
 
-<img width="413" height="213" alt="Image" src="https://github.com/user-attachments/assets/b12df437-ed07-4a99-b9d1-19c8f154df9b" />
+<img width="472" height="142" alt="Image" src="https://github.com/user-attachments/assets/c5dfbc61-b5bc-453b-a8ae-4d7e87c41e24" />
+<img width="550" height="161" alt="Image" src="https://github.com/user-attachments/assets/a878d7eb-3c56-4912-b588-427f17063b7a" />
 
 ### Azure SQL → Lookup (LastModifiedDate) → ForEach → Copy → If Condition → ADLS → Logic Apps
 
@@ -22,6 +23,17 @@ Key features:
 * Script (max_date) – Get latest value from source 
 * Copy (update_LastModifiedDate) – Updates the watermark when new data is found
 * Web Activity – Send pipeline status
+
+## Flow
+1. Loop tables using ForEach
+2. Get last value using Lookup
+3. Set current time
+4. Load data using Copy
+5. Check data using If Condition
+6. * No data → Delete file
+    * Data → Update latest value
+7. Send notification using Web Activity
+
 
   
 
