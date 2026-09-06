@@ -1,4 +1,4 @@
-# Incremental-Data-Ingestion-Pipeline-SQL-to-ADLS-Gen2
+# Incremental-Data-Ingestion-Pipeline-SQL to ADLS Gen2
 This is an end-to-end ADF pipeline that extracts data from an Azure SQL Database, applies incremental loading using Watermark column, and loads it into ADLS Gen2 as Parquet files.
 
 Key features:
